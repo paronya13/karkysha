@@ -3,7 +3,7 @@
 	<div class="menu">
 			
 		 <ul class="top_menu">
-<?php wp_nav_menu(array('container'=>'', 'container_class' => 'menu','menu_class' => 'top_menu','items_wrap' => '%3$s', 'before' => '', 'theme_lokation' => 'menu') ); ?>
+<?php wp_nav_menu(array('container'=>'','items_wrap' => '%3$s', 'before' => '', 'theme_location' => 'menu') ); ?>
 		 <!--<li><a href="#">Контакты</a></li>
 		<li><a href="#">Оплата и доставка</a></li>
 		 <li><a href="#">Вопросы</a></li>-->
