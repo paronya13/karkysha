@@ -27,11 +27,11 @@
 
 		 <li class="side_menu"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/menu1.png"></a></li>
 
-		<li><a class="contacts" href="#"><img src="<?php bloginfo('template_url'); ?>/img/contacts.png"></a></li>
+		<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a class="contacts" href="http://karkysha.com/kontakty/"><img src="<?php bloginfo('template_url'); ?>/img/contacts.png"></a></li>
 
-		 <li><a class="pay" href="#"><img src="<?php bloginfo('template_url'); ?>/img/pay.png"></a></li>
+		 <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a class="pay" href="http://karkysha.com/oplata-i-dostavka/"><img src="<?php bloginfo('template_url'); ?>/img/pay.png"></a></li>
 
-		<li ><a class="quest"  href="#"><img src="<?php bloginfo('template_url'); ?>/img/quest.png"></a></li>
+		<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a class="quest" href="http://karkysha.com/voprosy/"><img src="<?php bloginfo('template_url'); ?>/img/quest.png"></a></li>
 
         <li ><a class="enter" name="modal" href="#dialog"><img src="<?php bloginfo('template_url'); ?>/img/enter.png"></a></li>
 		 
