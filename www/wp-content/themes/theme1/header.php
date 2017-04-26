@@ -1,11 +1,12 @@
 <div class="header">
+
 	<div class="menu">
 			
 		 <ul class="top_menu">
-
-		 <li><a href="#">Контакты</a></li>
+<?php wp_nav_menu(array('container'=>'', 'container_class' => 'menu','menu_class' => 'top_menu','items_wrap' => '%3$s', 'before' => '', 'theme_lokation' => 'menu') ); ?>
+		 <!--<li><a href="#">Контакты</a></li>
 		<li><a href="#">Оплата и доставка</a></li>
-		 <li><a href="#">Вопросы</a></li>
+		 <li><a href="#">Вопросы</a></li>-->
 		<li ><a class="number1"  href="#">+38050 135 97 79</a></li>
 
 		 <li ><a class="number2" href="#">+38093 515 70 99</a></li>

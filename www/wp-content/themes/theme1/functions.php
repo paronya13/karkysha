@@ -21,4 +21,4 @@ add_action('wp_enqueue_scripts', 'register_styles');
 /**
 Добавление меню
 **/
-
+register_nav_menu('menu', 'Mainmenu');
