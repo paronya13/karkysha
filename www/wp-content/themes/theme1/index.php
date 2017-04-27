@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="popular">Популярные товары</div>
-	<div id="content">			
+	<div id="content">		
 		<div class="cartochka">
 			<div class="imageT"><a href="#">
 				<img src="<?php bloginfo('template_url'); ?>/img/soska.jpg">

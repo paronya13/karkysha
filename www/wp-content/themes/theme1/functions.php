@@ -18,8 +18,19 @@ function register_styles(){
 }
 add_action('wp_enqueue_scripts', 'register_styles');
 
+    add_action( 'after_setup_theme', 'woocommerce_support' );
+    function woocommerce_support() {
+        add_theme_support( 'woocommerce' );
+    }
+     add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' ); 
+
+function woo_style() {
+wp_register_style( 'my-woocommerce', get_template_directory_uri() . '/woocommerce.css');
+wp_enqueue_style( 'my-woocommerce' ); } add_action( 'wp_enqueue_scripts', 'woo_style');
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
 /**
-Добавление меню
-**/
+Добавление меню **/
 register_nav_menu('menu', 'Mainmenu');
+
 register_nav_menu('menu_side', 'Left_menu');

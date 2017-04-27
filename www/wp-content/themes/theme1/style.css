@@ -988,3 +988,91 @@ div.mn{
 }
 }
 
+/*woocommerce*/
+
+
+
+
+ul.products li{-moz-user-select: none;
+    -webkit-user-select: none;
+	max-width: 250px;	
+	height: 350px;
+	border: 1px solid #f5f2f2;
+	flex: 1;
+	-ms-flex: 1;
+	display: block;overflow: hidden;
+}
+ul.products li a{
+	display: block;
+	position: relative;
+}
+ul.products li img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+ul.products li img{padding: 5px;
+	position: relative;
+	display: block;
+	width: 200px;
+	height: 200px;
+	-moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+
+}
+.woocommerce-loop-product__title{
+	color: #254561;
+	font-family: "Segoe UI";
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 5px;
+}
+.kodT{
+	color: #292929;
+	font-family: "Segoe UI";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 15px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.price{
+	font-family: "Segoe UI";
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.buyT{
+	text-align: right;
+	margin-top: 30px;
+}
+a.product_type_simple{
+
+    width: 100px;
+	height: 36px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	font-family: "Segoe UI";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 30px;
+	background-image: linear-gradient(to top, #f28519 0%, #f28519 10%, #fc9b3a 90%);
+}
+a.product_type_simple:hover{
+	background: #39E639;
+}
+#foter li .qw a:hover{
+	color: #39E639;
+}
+#foter li .qw a{color: #cc3300;padding:0px;}
+.cartochka:hover{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);	
+	
+}
