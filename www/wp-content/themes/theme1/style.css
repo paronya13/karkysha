@@ -160,10 +160,6 @@ margin-top:2px;}
 	color: rgba(61, 112, 154, 0.36);
 	}
 
-#menu_body li ul {
-	display: none;
-	}
-
 
 #menu_body li:hover ul, #menu_body li.over ul {
 	display: block;
@@ -203,7 +199,7 @@ margin-top:2px;}
 	line-height: 15px;
     } 
 
-#menu_body ul li a:hover,#menu_body ul li a:focus {
+#menu_body ul li a:hover {
     color: #fff;
     text-decoration: none;
 	background:#0376a1;
@@ -235,7 +231,7 @@ margin-top:2px;}
 	margin-bottom: 4px;
 }
 
-#menu_body ul a#game::before{
+#menu_body #menu-item-45>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -245,7 +241,7 @@ margin-top:2px;}
 	background: url(img/game.png) no-repeat;
 	}
 
-#menu_body ul a#napkin::before{
+#menu_body #menu-item-65>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -255,7 +251,7 @@ margin-top:2px;}
 	background: url(img/napkin.png) no-repeat;
 	}
 
-#menu_body ul a#care::before{
+#menu_body #menu-item-49>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -265,7 +261,7 @@ margin-top:2px;}
 	background: url(img/care.png) no-repeat;
 	}
 
-#menu_body ul a#eat::before{
+#menu_body #menu-item-69>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -274,7 +270,7 @@ margin-top:2px;}
 	margin-right: 30px;
 	background: url(img/eat.png) no-repeat;
 	}
-#menu_body ul a#mam::before{
+#menu_body #menu-item-73>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -283,7 +279,7 @@ margin-top:2px;}
 	margin-right: 30px;
 	background: url(img/mam.png) no-repeat;
 	}
-#menu_body ul a#room::before{
+#menu_body #menu-item-61>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -292,7 +288,7 @@ margin-top:2px;}
 	margin-right: 30px;
 	background: url(img/room.png) no-repeat;
 	}
-#menu_body ul a#tour::before{
+#menu_body #menu-item-57>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;
@@ -301,7 +297,7 @@ margin-top:2px;}
 	margin-right: 30px;
 	background: url(img/tour.png) no-repeat;
 	}
-#menu_body ul a#dress::before{
+#menu_body #menu-item-53>a::before{
 	content: "";
 	vertical-align: middle;
 	display: inline-block;

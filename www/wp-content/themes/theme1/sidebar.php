@@ -7,8 +7,10 @@
   		</form>
 		</div>
 			<div id="menu_body">
-				<ul>
-					<li><a href="#" id="game" onclick="openMenu('sub_menu_1');return(false)">Игрушки</a>
+			
+				<ul id="menu">
+				<?php wp_nav_menu(array('container'=>'','items_wrap' => '%3$s', 'before' => '', 'theme_location' => 'menu_side') ); ?>
+					<!--<li><a href="#" id="game" onclick="openMenu('sub_menu_1');return(false)">Игрушки</a>
 						<ul id="sub_menu_1">
 							<li><a href="#">Развивающие</a></li>
 							<li><a href="#">Мягкие</a></li>
@@ -63,7 +65,7 @@
 							<li><a href="#">Распашонки</a></li>
 							<li><a href="#">Обувь</a></li>
 						</ul>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 	</div>

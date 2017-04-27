@@ -22,3 +22,4 @@ add_action('wp_enqueue_scripts', 'register_styles');
 Добавление меню
 **/
 register_nav_menu('menu', 'Mainmenu');
+register_nav_menu('menu_side', 'Left_menu');

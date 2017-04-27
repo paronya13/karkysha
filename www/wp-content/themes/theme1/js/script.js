@@ -26,7 +26,26 @@ var script1 = function() { // после загрузки страницы
 		}
 	};
 };
-var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3','sub_menu_4','sub_menu_5','sub_menu_6','sub_menu_7','sub_menu_8');
+function initMenu() {
+  $('#menu ul').hide();
+  $('#menu ul').children('.current').parent().show();
+  //$('#menu ul:first').show();
+  $('#menu li a').click(
+    function() {
+      var checkElement = $(this).next();
+      if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+        return false;
+        }
+      if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+        $('#menu ul:visible').slideUp('normal');
+        checkElement.slideDown('normal');
+        return false;
+        }
+      }
+    );
+  }
+$(document).ready(function() {initMenu();});
+/*var id_menu = new Array('sub_menu_1','sub_menu_2','sub_menu_3','sub_menu_4','sub_menu_5','sub_menu_6','sub_menu_7','sub_menu_8');
 startList = function allclose() {
 	for (i=0; i < id_menu.length; i++){
 		document.getElementById(id_menu[i]).style.display = "none";
@@ -44,7 +63,7 @@ function openMenu(id){
 		document.getElementById(id).style.display = "block";
 	}
 }
-var script2 = startList;
+var script2 = startList;*/
 
 $( document ).ready(function() {
 $('div.mn').css('height', $('.slide').height());
@@ -58,7 +77,7 @@ $(function(){
 })
 });
 // Слайдер скрипт
-var script3 = function(){
+$( document ).ready(function() {
 var controls = document.querySelectorAll('.controls');
 for(var i=0; i<controls.length; i++){
     controls[i].style.display = 'inline-block';
@@ -92,7 +111,7 @@ next.onclick = function(){
 previous.onclick = function(){
     previousSlide();
 };
-};
+});
 // Анимация сайдбара
 $( document ).ready(function() {
 var a=1;
