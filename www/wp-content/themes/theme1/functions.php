@@ -28,9 +28,27 @@ function woo_style() {
 wp_register_style( 'my-woocommerce', get_template_directory_uri() . '/woocommerce.css');
 wp_enqueue_style( 'my-woocommerce' ); } add_action( 'wp_enqueue_scripts', 'woo_style');
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
-/**
-Добавление меню **/
+add_action( 'woocommerce_after_shop_loop_item_title', 'shop_sku' );
+function shop_sku(){
+global $product;
+echo '<span itemprop="productID" class="sku">Артикул: ' . $product->sku . '</span>';
+}
+add_filter( 'woocommerce_currencies', 'add_my_currency' );
+function add_my_currency( $currencies ) {
+$currencies['ABC'] = __( 'Гривна укр', 'woocommerce' );
+return $currencies;
+}
+add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
+function add_my_currency_symbol( $currency_symbol, $currency ) {
+switch( $currency ) {
+case 'ABC': $currency_symbol = 'грн'; break;
+}
+return $currency_symbol;
+}
+add_filter( 'woocommerce_subcategory_count_html', 'jk_hide_category_count' );
+function jk_hide_category_count() {
+}
+/**Добавление меню **/
 register_nav_menu('menu', 'Mainmenu');
 
 register_nav_menu('menu_side', 'Left_menu');

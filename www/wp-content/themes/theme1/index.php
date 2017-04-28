@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><?php bloginfo('name'); ?></title>
+	<title><?php bloginfo('name');?></title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
 <?php wp_head(); ?>
@@ -76,6 +76,50 @@
 			<div class="nameT">Мелковоз</div>
 			<div class="kodT">Код товара: 18543</div>
 			<div class="priceT">3455грн.</div>
+			<div class="buyT">
+				<a href="#">Купить</a>
+			</div>
+		</div>
+		<div class="cartochka">
+			<div class="imageT"><a href="#">
+				<img src="<?php bloginfo('template_url'); ?>/img/soska.jpg">
+			</div></a>
+			<div class="nameT"><a href="#">Соска детская</a></div>
+			<div class="kodT">Код товара: 18943</div>
+			<div class="priceT">25грн.</div>
+			<div class="buyT">
+				<a href="#">Купить</a>
+			</div>
+		</div>
+		<div class="cartochka">
+			<div class="imageT">
+				<img src="<?php bloginfo('template_url'); ?>/img/podg.jpg">
+			</div>
+			<div class="nameT">Подгузники свежие</div>
+			<div class="kodT">Код товара: 18843</div>
+			<div class="priceT">125грн.</div>
+			<div class="buyT">
+				<a href="#">Купить</a>
+			</div>
+		</div>
+		<div class="cartochka">
+			<div class="imageT">
+				<img src="<?php bloginfo('template_url'); ?>/img/mulo.jpg">
+			</div>
+			<div class="nameT">Мыло четкое</div>
+			<div class="kodT">Код товара: 18743</div>
+			<div class="priceT">20грн.</div>
+			<div class="buyT">
+				<a href="#">Купить</a>
+			</div>
+		</div>
+		<div class="cartochka">
+			<div class="imageT">
+				<img src="<?php bloginfo('template_url'); ?>/img/obyv.jpg">
+			</div>
+			<div class="nameT">Педали детские</div>
+			<div class="kodT">Код товара: 18643</div>
+			<div class="priceT">99грн.</div>
 			<div class="buyT">
 				<a href="#">Купить</a>
 			</div>

@@ -35,7 +35,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-
+ul, li{
+	list-style-type: none;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -57,6 +59,7 @@ input{
 	}
 body{
 	background: url('img/fon.jpg');
+
 	
 }
 @font-face{
@@ -65,6 +68,15 @@ body{
 	font-style: normal;
 
 }	
+@font-face {
+			font-family: "AzoftSansBold";
+			src: url("fonts/AzoftSansBold.eot");
+			src: url("fonts/AzoftSansBold.eot?#iefix")format("embedded-opentype"),
+			url("fonts/AzoftSansBold.woff") format("woff"),
+			url("fonts/AzoftSansBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+			}
 #wrapper{
 	width: 100%;
 	height: 100%;
@@ -72,6 +84,7 @@ body{
 	margin: 0 auto;	
 	background-color: #fff;
 	overflow-x: hidden;
+
 	}
 
 #wrapper>div.sidebar{
@@ -87,15 +100,6 @@ body{
 	min-height: 700px;
 	margin-left: 250px;
 	font-size: 0;
-	display: -ms-flexbox;
-	display: flex;
-	display: -webkit-flex;
-	-ms-flex-pack: center;
-	    justify-content: center;
-
-	-ms-flex-wrap: wrap;
-
-	    flex-wrap: wrap;
 	
 	margin-bottom: 100px;
 margin-top:2px;}
@@ -388,7 +392,7 @@ margin-top:2px;}
 	
 }
 .hFooter{
-	height: 100px;
+	
 }
 .foter{
 	margin-top: -100px;
@@ -993,27 +997,20 @@ div.mn{
 
 
 
-ul.products li{-moz-user-select: none;
-    -webkit-user-select: none;
-	max-width: 250px;	
-	height: 350px;
-	border: 1px solid #f5f2f2;
-	flex: 1;
-	-ms-flex: 1;
-	display: block;overflow: hidden;
-}
+
 ul.products li a{
 	display: block;
 	position: relative;
 }
 ul.products li img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
-ul.products li img{padding: 5px;
-	position: relative;
+ul.products li img{
 	display: block;
+	margin: 5px auto;
+	position: relative;
 	width: 200px;
 	height: 200px;
 	-moz-transition: all 0.5s ease-out;
@@ -1022,37 +1019,43 @@ ul.products li img{padding: 5px;
 
 }
 .woocommerce-loop-product__title{
+	text-overflow: ellipsis;
+	display: block;
 	color: #254561;
 	font-family: "Segoe UI";
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 500;
-	line-height: 15px;
+	line-height: 18px;
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
-.kodT{
+.sku{
+	display: block;
 	color: #292929;
 	font-family: "Segoe UI";
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 15px;
 	margin-top: 15px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
-.price{
+ul.products span.price{
+	margin-top: 15px;
+	margin-left: 5px;
+	display: block;
+	color: #292929;
 	font-family: "Segoe UI";
 	font-size: 22px;
 	font-weight: 600;
 	line-height: 22px;
-	margin-top: 20px;
-	margin-left: 10px;
+	
 }
-.buyT{
-	text-align: right;
-	margin-top: 30px;
-}
-a.product_type_simple{
 
+a.product_type_simple{
+margin-top: 10px;
+	display: block;
     width: 100px;
 	height: 36px;
 	color: #fff;
@@ -1062,17 +1065,189 @@ a.product_type_simple{
 	font-family: "Segoe UI";
 	font-size: 18px;
 	font-weight: 600;
-	line-height: 30px;
+	line-height: 36px;
 	background-image: linear-gradient(to top, #f28519 0%, #f28519 10%, #fc9b3a 90%);
 }
 a.product_type_simple:hover{
 	background: #39E639;
 }
-#foter li .qw a:hover{
-	color: #39E639;
-}
 #foter li .qw a{color: #cc3300;padding:0px;}
-.cartochka:hover{
+ul.products li:hover{
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);	
+
 	
 }
+ul.products{
+	max-width: 1098px;
+	min-height: 700px;
+	font-size: 0;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+
+	-ms-flex-wrap: wrap;
+
+	    flex-wrap: wrap;
+	
+
+margin-top:2px;}
+ul.products li{-moz-user-select: none;
+    -webkit-user-select: none;
+	max-width: 250px;	
+	height: 350px;
+	border: 1px solid #f5f2f2;
+	flex: 1;
+	-ms-flex: 1;
+	display: block;
+}
+
+
+/*str dostavka*/
+
+#kontakt{
+	max-width: 1098px;
+}
+#kontakt ul{
+	max-width: 1098px;
+	display: block;
+}
+.inlite>li{
+		display: inline-block;
+		float: left;
+	}
+#kontakty{
+	font-family: "AzoftSansBold";
+	display: block;
+
+	height: auto;
+}
+#kontakty>ul>li>h1{
+	margin:10px;
+	font-size: 25px;
+	
+}
+
+#kontakty>ul>li>a{
+	font-size: 30px;
+}
+#kontakty>ul>li>.life::before {
+    		content: ''; width: 31px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/lifecell1.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>.mts::before {
+    		content: ''; width: 31px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/vodafone1.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>.kyivstar::before {
+    		content: ''; width: 31px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/kyivstar.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>.gmail::before {
+    		content: ''; width: 31px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/gmail.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>.address::before {
+    		content: ''; width: 31px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/address.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>.vkontakte::before {
+    		content: ''; width: 101px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/vkontakte.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>.timework::before {
+    		content: ''; width: 31px; height: 31px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/timework.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+#kontakty>ul>li>ul>li{
+	margin-left: 60px;
+	margin-top: 5px;}
+
+#map{
+	width: 500px;
+	height: auto;
+	display: block;
+	margin-left: 25px;
+}
+#map>img{
+	border: 2px solid orange;
+}
+
+.oplata ul{
+	max-width: 1098px;
+}
+.oplata ul li{
+	padding: 3px;
+	margin-left: 10px;
+	font-size: 18px;
+	font-family: "Segoe UI";
+
+}
+.oplata>ul>li>h1{
+	margin:10px;
+	font-size: 25px;
+	font-family: "AzoftSansBold";
+	color: orange;
+	
+}
+.oplata>ul>li>ul>li>.new::before {
+    		content: ''; width: 120px; height: 30px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/newpochta.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+.oplata>ul>li>ul>li>.ykr::before {
+    		content: ''; width: 120px; height: 30px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/ykrpochta.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+.oplata>ul>li>ul>li>.int::before {
+    		content: ''; width: 120px; height: 30px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/intime.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
+.oplata>ul>li>ul>li>.del::before {
+    		content: ''; width: 120px; height: 30px;
+    		display: inline-block; 
+    		vertical-align: middle;
+    		background: url('img/delivery.png') no-repeat;
+    		padding-right: 5px;
+    		margin-left: 25px;
+    		margin-top:5px;}
